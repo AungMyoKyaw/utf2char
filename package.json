@@ -1,0 +1,27 @@
+{
+  "name": "utf2char",
+  "version": "0.0.1",
+  "description": "convert utf to letter",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "bin":{
+  	"utf2char":"./index.js"
+  },
+  "keywords": [
+    "utf",
+    "char",
+    "utr-to-char",
+    "decode \\uXXXX to string"
+  ],
+  "author": "Aung Myo Kyaw",
+  "repository" :{
+  	"type" : "git",
+	  "url" : "https://github.com/AungMyoKyaw/utf2char"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  }
+}
