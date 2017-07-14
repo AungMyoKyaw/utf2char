@@ -13,7 +13,7 @@ const toStr = (mystr,filePath)=>{
 	})
 	if(filePath){
 		overWrite && fs.writeFileSync(`${filePath}`,mystr);
-		fs.writeFileSync(`${filePath}.new`,mystr);
+		!overWrite && fs.writeFileSync(`${filePath}.new`,mystr);
 		console.log('Successfully Decoded :-)')
 	} else {
 		return mystr;
