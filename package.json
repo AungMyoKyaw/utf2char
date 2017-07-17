@@ -6,8 +6,8 @@
   "scripts": {
     "test": "mocha"
   },
-  "bin":{
-  	"utf2char":"./index.js"
+  "bin": {
+    "utf2char": "./index.js"
   },
   "keywords": [
     "utf",
@@ -16,12 +16,13 @@
     "decode \\uXXXX to string"
   ],
   "author": "Aung Myo Kyaw",
-  "repository" :{
-  	"type" : "git",
-	  "url" : "https://github.com/AungMyoKyaw/utf2char"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AungMyoKyaw/utf2char"
   },
   "license": "MIT",
   "devDependencies": {
+    "chai": "^4.1.0",
     "mocha": "^3.4.2"
   }
 }
