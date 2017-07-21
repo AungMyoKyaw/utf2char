@@ -2,12 +2,13 @@
   "name": "utf2char",
   "version": "0.0.2",
   "description": "convert utf to letter",
-  "main": "index.js",
+  "main": "dist/utf2char.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "gulp"
   },
   "bin": {
-    "utf2char": "./index.js"
+    "utf2char": "./dist/utf2char.js"
   },
   "keywords": [
     "utf",
@@ -22,7 +23,10 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "chai": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
     "mocha": "^3.4.2"
   }
 }

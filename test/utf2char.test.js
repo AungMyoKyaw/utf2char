@@ -2,7 +2,7 @@ const fs = require('fs');
 const chai = require('chai');
 const should = chai.should();
 
-const utf2char = require('../index');
+const utf2char = require('../dist/utf2char');
 
 describe('utf2char',()=>{
 	it('Return String Data',done=>{
