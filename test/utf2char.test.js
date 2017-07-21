@@ -1,3 +1,5 @@
+require("babel-register");
+
 const fs = require('fs');
 const chai = require('chai');
 const should = chai.should();
