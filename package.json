@@ -4,7 +4,7 @@
   "description": "convert utf to letter",
   "main": "dist/utf2char.js",
   "scripts": {
-    "test": "mocha",
+    "test": " mocha --compilers js:babel-register test",
     "build": "gulp"
   },
   "bin": {
