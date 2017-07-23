@@ -1,6 +1,6 @@
 {
   "name": "utf2char",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "convert utf to letter",
   "main": "dist/utf2char.js",
   "scripts": {
