@@ -21,8 +21,13 @@ var toStr = function toStr(mystr, filePath) {
 	}
 };
 
-if (filePath) {
-	var isDir = fs.lstatSync(filePath).isDirectory();
+if (filePath && fs.existsSync(filePath)) {
+	var isDir = void 0;
+	try {
+		isDir = fs.lstatSync(filePath).isDirectory();
+	} catch (err) {
+		isDir = null;
+	}
 	var mystr = !isDir ? fs.readFileSync(filePath, 'utf8') : '';
 	!isDir && toStr(mystr, filePath);
 } else {

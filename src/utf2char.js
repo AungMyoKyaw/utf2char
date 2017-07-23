@@ -20,8 +20,14 @@ const toStr = (mystr,filePath)=>{
 	}
 }
 
-if(filePath){
-	let isDir = fs.lstatSync(filePath).isDirectory();
+if(filePath && fs.existsSync(filePath)){
+	let isDir;
+	try{
+		isDir = fs.lstatSync(filePath).isDirectory();
+	}
+	catch(err){
+		isDir = null;
+	}
 	let mystr = !isDir ? fs.readFileSync(filePath,'utf8') : '';
 	!isDir && toStr(mystr,filePath);
 } else {
