@@ -1,6 +1,6 @@
 {
   "name": "utf2char",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "convert utf to letter",
   "main": "dist/utf2char.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "gulp-babel": "^6.1.2",
     "mocha": "^3.4.2"
   },
-  "engines":{
-  	"node": ">= 1.X.X"
+  "engines": {
+    "node": ">= 1.X.X"
   }
 }
