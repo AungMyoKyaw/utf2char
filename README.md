@@ -3,6 +3,7 @@
 > Decode \uXXXX to UTF-8 Character
 
 [![Build Status][travis]][travis-url]
+[![code style: prettier][prettier]][prettier-url]
 [![npm][npm-download]][npm-dl-url]
 [![contributions welcome][contri]][contri-url]
 [![License: MIT][license]][license-url]
@@ -32,10 +33,10 @@ npm install --save utf2char
 ### Programmitically
 
 ```javascript
-const utf2char = require("utf2char");
+const utf2char = require('utf2char');
 
 let mystr =
-	"\u1000\u1001\u1002\u1003\u1004\u1005\u1006\u1007\u1008\u1009\u1010\u1011\u1012\u1013\u1014\u1015\u1016\u1017\u1018\u1019\u1020\u1021";
+  '\u1000\u1001\u1002\u1003\u1004\u1005\u1006\u1007\u1008\u1009\u1010\u1011\u1012\u1013\u1014\u1015\u1016\u1017\u1018\u1019\u1020\u1021';
 
 let decodedStr = utf2char(mystr);
 console.log(decodedStr); //ကခဂဃငစဆဇဈဉတထဒဓနပဖဗဘမဠအ
@@ -61,7 +62,7 @@ utf2char filepath -o //overwirte with decoded \uXXXX
 
 ## License
 
-[MIT](./LICENSE)
+MIT © [Aung Myo Kyaw](https://github.com/AungMyoKyaw)
 
 [contri]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square
 [contri-url]: https://github.com/AungMyoKyaw/utf2char/issues
@@ -71,3 +72,5 @@ utf2char filepath -o //overwirte with decoded \uXXXX
 [npm-dl-url]: https://www.npmjs.com/package/utf2char
 [license]: https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square
 [license-url]: https://opensource.org/licenses/MIT
+[prettier]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
+[prettier-url]: https://github.com/prettier/prettier
